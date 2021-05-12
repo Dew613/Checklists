@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		532F12FC264A940900D34376 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532F12FB264A940900D34376 /* ChecklistItem.swift */; };
+		532F12FE264AB2E700D34376 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532F12FD264AB2E700D34376 /* ItemDetailViewController.swift */; };
 		53FB9D4D25F9822C00F51F07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FB9D4C25F9822C00F51F07 /* AppDelegate.swift */; };
 		53FB9D4F25F9822C00F51F07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FB9D4E25F9822C00F51F07 /* SceneDelegate.swift */; };
-		53FB9D5125F9822C00F51F07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FB9D5025F9822C00F51F07 /* ViewController.swift */; };
+		53FB9D5125F9822C00F51F07 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FB9D5025F9822C00F51F07 /* ChecklistViewController.swift */; };
 		53FB9D5425F9822C00F51F07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FB9D5225F9822C00F51F07 /* Main.storyboard */; };
 		53FB9D5625F9822F00F51F07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53FB9D5525F9822F00F51F07 /* Assets.xcassets */; };
 		53FB9D5925F9822F00F51F07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FB9D5725F9822F00F51F07 /* LaunchScreen.storyboard */; };
@@ -35,10 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		532F12FB264A940900D34376 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
+		532F12FD264AB2E700D34376 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		53FB9D4925F9822C00F51F07 /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53FB9D4C25F9822C00F51F07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53FB9D4E25F9822C00F51F07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		53FB9D5025F9822C00F51F07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		53FB9D5025F9822C00F51F07 /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
 		53FB9D5325F9822C00F51F07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53FB9D5525F9822F00F51F07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53FB9D5825F9822F00F51F07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,8 +105,10 @@
 			children = (
 				53FB9D4C25F9822C00F51F07 /* AppDelegate.swift */,
 				53FB9D4E25F9822C00F51F07 /* SceneDelegate.swift */,
-				53FB9D5025F9822C00F51F07 /* ViewController.swift */,
+				53FB9D5025F9822C00F51F07 /* ChecklistViewController.swift */,
+				532F12FB264A940900D34376 /* ChecklistItem.swift */,
 				53FB9D5225F9822C00F51F07 /* Main.storyboard */,
+				532F12FD264AB2E700D34376 /* ItemDetailViewController.swift */,
 				53FB9D5525F9822F00F51F07 /* Assets.xcassets */,
 				53FB9D5725F9822F00F51F07 /* LaunchScreen.storyboard */,
 				53FB9D5A25F9822F00F51F07 /* Info.plist */,
@@ -258,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53FB9D5125F9822C00F51F07 /* ViewController.swift in Sources */,
+				532F12FE264AB2E700D34376 /* ItemDetailViewController.swift in Sources */,
+				53FB9D5125F9822C00F51F07 /* ChecklistViewController.swift in Sources */,
 				53FB9D4D25F9822C00F51F07 /* AppDelegate.swift in Sources */,
 				53FB9D4F25F9822C00F51F07 /* SceneDelegate.swift in Sources */,
+				532F12FC264A940900D34376 /* ChecklistItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -437,6 +445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7K4UX8GXQ;
 				INFOPLIST_FILE = Checklists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7K4UX8GXQ;
 				INFOPLIST_FILE = Checklists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
