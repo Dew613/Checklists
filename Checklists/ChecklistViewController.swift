@@ -10,6 +10,8 @@ import UIKit
 
 // MARK: - Add Item View Controller Delegate
 class ChecklistViewController: UITableViewController, ItemDetailViewControllerDelegate {
+    
+    //MARK: - protocol functions
     func itemDetailViewControllerDidCancel(_ controller: ItemDetailViewController) {
         navigationController?.popViewController(animated: true)
     }
@@ -41,14 +43,21 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     }
     
     
+    //MARK: - Global variables
     var items = [ChecklistItem]()
+    var checklist: Checklist!
+    
+    
 
+    
+    //MARK: ViewdidLoad
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .never
         loadChecklistsItems()
+        title = checklist.name
         //print("Documents folder is \(documentsDirectory())")
         //print("Data file path is \(dataFilePath())")
 
